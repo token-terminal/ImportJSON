@@ -6,17 +6,19 @@ Import JSON from any URL directly into your Google Sheets. `ImportJSON.gs` adds 
 
 Here are all the functions available:
 
-| Function                |  Description                                                                      |
-|-------------------------|-----------------------------------------------------------------------------------|
-| **ImportJSON**          | For use by end users to import a JSON feed from a URL                             |
-| **ImportJSONFromSheet** | For use by end users to import JSON from one of the Sheets                        |
-| **ImportJSONViaPost**   | For use by end users to import a JSON feed from a URL using POST parameters       |
-| **ImportJSONBasicAuth** | For use by end users to import a JSON feed from a URL with HTTP Basic Auth        |
-| **ImportJSONAdvanced**  | For use by script developers to easily extend the functionality of this library   |
+| Function                | Description                                                                     |
+| ----------------------- | ------------------------------------------------------------------------------- |
+| **ImportJSON**          | For use by end users to import a JSON feed from a URL                           |
+| **ImportJSONFromSheet** | For use by end users to import JSON from one of the Sheets                      |
+| **ImportJSONViaPost**   | For use by end users to import a JSON feed from a URL using POST parameters     |
+| **ImportJSONBasicAuth** | For use by end users to import a JSON feed from a URL with HTTP Basic Auth      |
+| **ImportJSONTokenAuth** | For use by end users to import a JSON feed from a URL with HTTP Token Auth      |
+| **ImportJSONAdvanced**  | For use by script developers to easily extend the functionality of this library |
 
 Review `ImportJSON.gs` for more info on how to use these in detail.
 
 ## Version
+
 - v1.6.0 (June 2, 2019) Fixed null values (thanks @gdesmedt1)
 - v1.5.0 (January 11, 2019) Adds ability to include all headers in a fixed order even when no data is present for a given header in some or all rows.
 - v1.4.0 (July 23, 2017) - Project transferred to Brad Jasper. Fixed off-by-one array bug. Fixed previous value bug. Added custom annotations. Added ImportJSONFromSheet and ImportJSONBasicAuth.
@@ -28,14 +30,16 @@ Review `ImportJSON.gs` for more info on how to use these in detail.
 - v1.0.0 - Initial release
 
 ## How can you help?
+
 - Found a bug? Report it! https://github.com/bradjasper/ImportJSON/issues
 - Want to contribute? Submit an <a href="https://github.com/bradjasper/ImportJSON/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement">enhancement</a>
 
 ## Website archive
+
 This code base used to be hosted at http://blog.fastfedora.com/projects/import-json and contained a lot of useful information. It has been archived at https://rawgit.com/bradjasper/ImportJSON/master/archive/blog.fastfedora.com/projects/import-json.html
 
 ## Alternatives
+
 Some of this if possible internally with Google App Scripts External APIs, like UrlFetch: https://developers.google.com/apps-script/guides/services/external
 
 These require a Google account and an explicit permission, but in some cases may be a good fit.
-
