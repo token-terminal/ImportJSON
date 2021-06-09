@@ -15,6 +15,7 @@
      ImportJSONViaPost     For use by end users to import a JSON feed from a URL using POST parameters
      ImportJSONAdvanced    For use by script developers to easily extend the functionality of this library
      ImportJSONBasicAuth   For use by end users to import a JSON feed from a URL with HTTP Basic Auth (added by Karsten Lettow)
+     ImportJSONTokenAuth   For use by end users to import a JSON feed from a URL with HTTP Token Auth (added by Token Terminal)     
 
   For future enhancements see https://github.com/bradjasper/ImportJSON/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement
   
@@ -316,7 +317,7 @@ function ImportJSONBasicAuth(url, username, password, query, parseOptions) {
  * @return a two-dimensional array containing the data, with the first row containing headers
  * @customfunction
  **/
-function ImportJSONBasicAuth(url, token, query, parseOptions) {
+function ImportJSONTokenAuth(url, token, query, parseOptions) {
   var header = { headers: { Authorization: "Bearer " + token } };
   return ImportJSONAdvanced(
     url,
