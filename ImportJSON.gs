@@ -478,6 +478,8 @@ function parseData_(
     "exchanges",
     "metric_availability",
     "is_draft",
+    "brand",
+    "logo
   ];
 
   if (Array.isArray(value) && isObjectArray_(value)) {
