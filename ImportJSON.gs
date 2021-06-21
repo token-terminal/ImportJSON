@@ -626,11 +626,7 @@ function applyXPathRule_(rule, path, options) {
  */
 function defaultTransform_(data, row, column, options) {
   if (data[row][column] == null) {
-    if (row < 2 || hasOption_(options, "noInherit")) {
-      data[row][column] = "";
-    } else {
-      data[row][column] = data[row - 1][column];
-    }
+    data[row][column] = "";
   }
 
   if (!hasOption_(options, "rawHeaders") && row == 0) {
