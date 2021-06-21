@@ -473,7 +473,7 @@ function parseData_(
   includeFunc
 ) {
   var dataInserted = false;
-  var excludedKeys = ["description", "exchanges"];
+  var excludedKeys = ["description", "exchanges", "metric_availability"];
 
   if (Array.isArray(value) && isObjectArray_(value)) {
     for (var i = 0; i < value.length; i++) {
