@@ -479,7 +479,7 @@ function parseData_(
     "metric_availability",
     "is_draft",
     "brand",
-    "logo
+    "logo",
   ];
 
   if (Array.isArray(value) && isObjectArray_(value)) {
